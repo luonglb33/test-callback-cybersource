@@ -5,8 +5,8 @@ const app = express();
 app.use(express.json());
 
 app.post("/cybersource/callback", (req, res) => {
-  console.log("🚀 ~ app.post ~ req.body:", req.params);
-  console.log("🚀 ~ app.post ~ req.body:", req.query);
+  console.log("🚀 =================================");
+  console.log("🚀 ~ app.post ~ req", req);
 
   // if (decision === "ACCEPT") {
   //   console.log(`Token received: ${payment_token}`);
